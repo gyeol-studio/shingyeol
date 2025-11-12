@@ -2,20 +2,16 @@
   "name": "@shingyeol/web",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "type-check": "tsc --noEmit"
-  },
   "dependencies": {
     "next": "^15.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "@shingyeol/shared-types": "workspace:*",
     "zod": "^3.22.4",
-    "lucide-react": "^0.294.0"
+    "lucide-react": "^0.294.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^2.2.0",
+    "recharts": "^2.10.3"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -26,6 +22,15 @@
     "postcss": "^8.4.32",
     "autoprefixer": "^10.4.16",
     "eslint": "^8",
-    "eslint-config-next": "^15.0.0"
+    "eslint-config-next": "^15.0.0",
+    "@playwright/test": "^1.40.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "test:e2e": "playwright test"
   }
 }
