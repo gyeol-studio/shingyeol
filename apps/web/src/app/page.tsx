@@ -5,7 +5,7 @@ export default function Home() {
       <section className="bg-gradient-to-br from-brand-primary to-[#34495E] text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4 font-hanja">
-            신경을 (神經乙)
+            신결 (神結)
           </h1>
           <p className="text-lg opacity-90 mb-8">
             전통적인 사주명리학과 현대 기술의 조화

@@ -2,7 +2,7 @@
   "name": "shingyeol",
   "version": "0.1.0",
   "private": true,
-  "description": "신경을 (神經乙) - AI 기반 사주 풀이 서비스",
+  "description": "신결 (神結) - AI 기반 사주 풀이 서비스",
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",

@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Saju Page', () => {
   test('should display homepage', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('h1')).toContainText('신경을');
+    await expect(page.locator('h1')).toContainText('신결');
   });
 
   test('should navigate to saju page', async ({ page }) => {
