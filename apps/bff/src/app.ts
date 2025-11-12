@@ -4,6 +4,7 @@ import cors from '@koa/cors';
 import { errorHandler } from './middleware/error-handler.js';
 import { logger } from './middleware/logger.js';
 import { healthRouter } from './routes/health.routes.js';
+import { sajuRouter } from './routes/saju.routes.js';
 
 const app = new Koa();
 
@@ -21,5 +22,7 @@ app.use(bodyParser({
 // Routes
 app.use(healthRouter.routes());
 app.use(healthRouter.allowedMethods());
+app.use(sajuRouter.routes());
+app.use(sajuRouter.allowedMethods());
 
 export { app };
